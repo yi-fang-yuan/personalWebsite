@@ -1,0 +1,54 @@
+$image: "../../images/homePageBg.jpeg";
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -5;
+}
+
+.frontPage {
+    // background: url($image) no-repeat center;
+    // background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    z-index: -5;
+    object-fit: contain;
+}
+
+.navBar {
+    position: fixed;
+    // background: rgb(51,51,51);
+    width: 100%;
+    display: flex;
+    height: 6%;
+    justify-content: center;
+    align-items: center;
+    li {
+        display: inline-block;
+        margin: 0 2%;
+    }
+    a {
+        text-decoration: none;
+        font-size: 1.7vh;
+        font-family: sans-serif;
+        color: white;
+        font-weight: bold;
+        z-index: -10 !important;
+        text-transform: uppercase;
+        transition: 0.5s;
+    }
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    color: white;
+    font-size: 3vh;
+    justify-content: center;
+    align-items: center;
+    .name {
+        word-spacing: 15px;
+    }
+}
