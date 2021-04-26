@@ -1,0 +1,73 @@
+.frontPage {
+    // background: url($image) no-repeat center;
+    // background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    z-index: -5;
+    object-fit: contain;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+    font-style: normal;
+    text-align: center;
+    h1 {
+        font-weight: bold;
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    .name {
+        word-spacing: 15px;
+    }
+    .box {
+        margin-top: 5%;
+        border: 5px solid #ffffff;
+        box-sizing: border-box;
+        width: 17rem;
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        h4 {
+            text-decoration: none;
+            color: #ffffff;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 5;
+            margin: 0 auto;
+            font-size: 1.5rem;
+        }
+    }
+    .icons {
+        display: flex;
+        justify-content: space-evenly;
+        width: 40%;
+        margin-top: 5%;
+        a {
+            text-decoration: none;
+            color: whitesmoke;
+            font-size: 2.5rem;
+        }
+    }
+}
+
+$breakpoint-tablet: 768px;
+@media (max-width: $breakpoint-tablet) {
+    .intro h1 {
+        font-size: 2rem;
+    }
+    .intro h3 {
+        font-size: 1.5rem;
+    }
+    .intro .icons {
+        width: 100%;
+    }
+}

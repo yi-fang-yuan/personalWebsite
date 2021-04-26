@@ -1,11 +1,11 @@
-$image: "../../images/homePageBg.jpeg";
-video {
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    z-index: -5;
-}
+// $image: "../../images/homePageBg.jpeg";
+// video {
+//     object-fit: cover;
+//     width: 100vw;
+//     height: 100vh;
+//     position: fixed;
+//     z-index: -5;
+// }
 
 .frontPage {
     // background: url($image) no-repeat center;
@@ -24,6 +24,7 @@ video {
     height: 6%;
     justify-content: center;
     align-items: center;
+    z-index: 5;
     li {
         display: inline-block;
         margin: 0 2%;
@@ -31,7 +32,8 @@ video {
     a {
         text-decoration: none;
         font-size: 1.7vh;
-        font-family: sans-serif;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
         color: white;
         font-weight: bold;
         z-index: -10 !important;
@@ -40,15 +42,6 @@ video {
     }
 }
 
-.intro {
-    display: flex;
-    flex-direction: column;
-    height: 80%;
-    color: white;
-    font-size: 3vh;
-    justify-content: center;
-    align-items: center;
-    .name {
-        word-spacing: 15px;
-    }
+.scroll {
+    background-color: #1c1818;
 }

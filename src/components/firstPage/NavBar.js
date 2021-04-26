@@ -1,27 +1,26 @@
 import "./NavBar.scss"
-import Typewriter from 'typewriter-effect';
+import React, { useState, useEffect } from 'react';
 
 function NavBar() {
+    const [navBarColor, setNavBarColor] = useState(null);
+    useEffect(() => {
+        document.addEventListener("scroll", () => {
+            if (window.scrollY > window.innerHeight) {
+                document.querySelector(".navBar").className = "navBar scroll"
+            }
+            else {
+                document.querySelector(".navBar").className = "navBar"
+            }
+        });
+    });
+
     return (
-        <div className="frontPage">
-            <nav className="navBar">
-                <li><a href="#welcome">Home</a></li>
-                <li><a href="#secondpage">About</a></li>
-                <li><a href="#thirdpage">Resume</a></li>
-                <li><a href="#Projects">Project</a></li>
-            </nav>
-            <video src="/videos/cloudSky.mov" autoPlay loop muted />
-            <div className="intro">
-                <h1 className="name">I AM YI FANG YUAN</h1>
-                <h3>And I am a ...</h3>
-                <h3><Typewriter options={{
-                    strings: ['Full Stack Developer', 'McGill Software Engineering Student', 'Java Developer', 'React Developer'],
-                    autoStart: true,
-                    loop: true
-                }}
-                /></h3>
-            </div>
-        </div>
+        <nav className="navBar">
+            <li><a href="#welcome">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Resume</a></li>
+            <li><a href="#projects">Project</a></li>
+        </nav>
     )
 }
 
