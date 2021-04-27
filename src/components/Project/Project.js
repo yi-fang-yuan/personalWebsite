@@ -31,6 +31,12 @@ export default function Project() {
             case 'typescript':
                 dummy.backgroundColor = "#66CDAA";
                 return dummy;
+            case 'php':
+                dummy.backgroundColor = "#9370DB";
+                return dummy;
+            case 'laravel':
+                dummy.backgroundColor = "#FF0000";
+                return dummy;
         }
     }
     return (
@@ -77,6 +83,27 @@ export default function Project() {
                         <div style={chooseSkillColor("javascript")}><h5>JAVASCRIPT</h5></div>
                         <div style={chooseSkillColor("typescript")}><h5>TYPESCRIPT</h5></div>
                         <div style={chooseSkillColor("express")}><h5>EXPRESS.JS</h5></div>
+                    </div>
+                </div>
+            </div >
+
+            <div className="project">
+                <div className="picture">
+                    <a target="_blank" href="http://yiyi-luxury.herokuapp.com/"><img className="project-pic" src="https://user-images.githubusercontent.com/52011886/116259318-b23e3200-a743-11eb-90a4-dfa01d3d746a.png" alt="true"></img>
+                    </a>
+                </div>
+                <div className="description">
+                    <h4>PERSONAL SHOP</h4>
+                    <a target="_blank" href="http://yiyi-luxury.herokuapp.com/"><h3>YIYI LUXURY</h3>
+                    </a>
+                    <ul>
+                        <li>Online e-commerce shopping web app using <b>Laravel and Eloquent ORM </b> to interact with SQL database<br /><br /></li>
+                        <li>Front End built with Laravel blade template and Bootstrap 4.<br /><br /></li>
+                        <li>Populating and categorizing up to 100 luxury products using query builder and database seeding<br /><br /></li>
+                    </ul>
+                    <div className="languages">
+                        <div style={chooseSkillColor("laravel")}><h5>LARAVEL</h5></div>
+                        <div style={chooseSkillColor("php")}><h5>PHP</h5></div>
                     </div>
                 </div>
             </div >
