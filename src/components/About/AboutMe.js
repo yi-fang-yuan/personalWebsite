@@ -1,5 +1,4 @@
 import "./AboutMe.scss"
-import Col from 'react-bootstrap/Col';
 
 export default function AboutMe() {
     return (
