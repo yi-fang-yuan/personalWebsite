@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import './Project.scss'
 export default function Project() {
 
@@ -6,7 +7,7 @@ export default function Project() {
         justifyContent: "center",
         alignItems: "center",
         height: "1.5rem",
-        padding: "10px 10px 10px 10px",
+        padding: "5px 10px 5px 10px",
         borderRadius: "20.9381px",
     }
 
@@ -41,6 +42,18 @@ export default function Project() {
                 return dummy;
         }
     }
+
+    useEffect(() => {
+        document.addEventListener("scroll", () => {
+            if (window.scrollY > document.querySelector(".experience").offsetHeight) {
+                document.querySelector(".navBar li .Project").style.color = "#FF7F50";
+            }
+            else {
+                document.querySelector(".navBar li .Project").style.color = "white";
+            }
+        });
+    });
+
     return (
         <div className="projects" id="projects">
 
