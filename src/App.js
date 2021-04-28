@@ -3,7 +3,6 @@ import AboutMe from './components/About/AboutMe';
 import Experience from './components/Experience/Experience';
 import Intro from './components/firstPage/Intro';
 import NavBar from './components/firstPage/NavBar';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Project from './components/Project/Project';
 
 function App() {
