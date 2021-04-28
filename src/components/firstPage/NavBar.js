@@ -1,8 +1,8 @@
 import "./NavBar.scss"
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 function NavBar() {
-    const [navBarColor, setNavBarColor] = useState(null);
+    // const [navBarColor, setNavBarColor] = useState(null);
     useEffect(() => {
         document.addEventListener("scroll", () => {
             if (window.scrollY > window.innerHeight) {

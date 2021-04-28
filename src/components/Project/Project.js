@@ -37,6 +37,8 @@ export default function Project() {
             case 'laravel':
                 dummy.backgroundColor = "#FF0000";
                 return dummy;
+            default:
+                return dummy;
         }
     }
     return (
@@ -45,11 +47,11 @@ export default function Project() {
             <h1>PROJECTS</h1>
             <div className="purpleBox"></div>
             <div className="project">
-                <a target="_blank" href="https://yiyi-covid19-tracker.herokuapp.com/"><img className="project-pic" src="https://user-images.githubusercontent.com/52011886/116006886-290beb80-a5db-11eb-95a8-1d127a00c43b.png" alt="true"></img>
+                <a target="_blank" rel="noreferrer" href="https://yiyi-covid19-tracker.herokuapp.com/"><img className="project-pic" src="https://user-images.githubusercontent.com/52011886/116006886-290beb80-a5db-11eb-95a8-1d127a00c43b.png" alt="true"></img>
                 </a>
                 <div className="description">
                     <h4>Covid Tracker</h4>
-                    <a target="_blank" href="https://yiyi-covid19-tracker.herokuapp.com/"><h3>COVID-19-TRACKER</h3>
+                    <a target="_blank" rel="noreferrer" href="https://yiyi-covid19-tracker.herokuapp.com/"><h3>COVID-19-TRACKER</h3>
                     </a>
                     <ul>
                         <li>Built a web interface  using <b>Vuex</b> to monitor real-time covid cases with graphical analytics <br /><br /></li>
@@ -65,12 +67,12 @@ export default function Project() {
             </div >
             <div className="project">
                 <div className="picture">
-                    <a target="_blank" href="https://mumap.xyz/"><img className="project-pic" src="https://user-images.githubusercontent.com/52011886/116021151-9f2d4400-a615-11eb-8b21-c1d0c42c176b.png" alt="true"></img>
+                    <a target="_blank" rel="noreferrer" href="https://mumap.xyz/"><img className="project-pic" src="https://user-images.githubusercontent.com/52011886/116021151-9f2d4400-a615-11eb-8b21-c1d0c42c176b.png" alt="true"></img>
                     </a>
                 </div>
                 <div className="description">
                     <h4>Open-Air Museum for Artists</h4>
-                    <a target="_blank" href="https://mumap.xyz/"><h3>MU MAP</h3>
+                    <a target="_blank" rel="noreferrer" href="https://mumap.xyz/"><h3>MU MAP</h3>
                     </a>
                     <ul>
                         <li>Developed a progressive web app for MUMTL to locate murals in Montreal on map with information<br /><br /></li>
@@ -89,12 +91,12 @@ export default function Project() {
 
             <div className="project">
                 <div className="picture">
-                    <a target="_blank" href="http://yiyi-luxury.herokuapp.com/"><img className="project-pic" src="https://user-images.githubusercontent.com/52011886/116259318-b23e3200-a743-11eb-90a4-dfa01d3d746a.png" alt="true"></img>
+                    <a target="_blank" rel="noreferrer" href="http://yiyi-luxury.herokuapp.com/"><img className="project-pic" src="https://user-images.githubusercontent.com/52011886/116259318-b23e3200-a743-11eb-90a4-dfa01d3d746a.png" alt="true"></img>
                     </a>
                 </div>
                 <div className="description">
                     <h4>PERSONAL SHOP</h4>
-                    <a target="_blank" href="http://yiyi-luxury.herokuapp.com/"><h3>YIYI LUXURY</h3>
+                    <a target="_blank" rel="noreferrer" href="http://yiyi-luxury.herokuapp.com/"><h3>YIYI LUXURY</h3>
                     </a>
                     <ul>
                         <li>Online e-commerce shopping web app using <b>Laravel and Eloquent ORM </b> to interact with SQL database<br /><br /></li>
