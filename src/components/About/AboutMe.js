@@ -5,7 +5,7 @@ export default function AboutMe() {
         <div className="frontPage">
             <div id="about" className="about">
                 <img className="profile-pic" src="https://user-images.githubusercontent.com/52011886/115975547-bac01e00-a533-11eb-8fde-4713b3417ed2.png" alt="true" />
-                <Col md={{ span: 5, offset: 1 }} className="description">
+                <div className="description">
                     <h3>ABOUT ME</h3>
                     <div className="blueBox"></div>
                     <p>I am
@@ -18,7 +18,7 @@ export default function AboutMe() {
                         <br></br>I am open for Summer 2022 internship opportunity,
                         if you think I am a good fit, please do not hesitate to reach out to me !
                         </p>
-                </Col>
+                </div>
             </div>
 
         </div>
